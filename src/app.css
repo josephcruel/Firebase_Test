@@ -80,3 +80,32 @@ button:hover {
     background-color: white;
 }
 
+/* Add Details Form */
+
+#modal .modal-header h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#modal .modal-content .row {
+    display: flex;
+}
+
+#modal .modal-content .row .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+}
+
+input[type="text"]
+input[type="number"]
+input[type="email"] {
+    font-size: 20px;
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: gray;
+    border: 1px solid #d6d6d6;
+}
