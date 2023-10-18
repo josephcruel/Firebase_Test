@@ -109,3 +109,63 @@ input[type="email"] {
     color: gray;
     border: 1px solid #d6d6d6;
 }
+
+#modal .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 10px;
+}
+
+/* Contact List */
+
+#contact-list {
+    padding: 0;
+    margin: 0;
+    border: 1px solid gray;
+    border-bottom: 0;
+}
+
+.contact-list-item {
+    display: flex;
+    border-bottom: 1px solid #999;
+    padding: 5px;
+}
+ 
+
+.contact-list-item .media {
+    flex: 1
+}
+
+.contact-list-item .content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.contact-list-item .content .title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Right Column */
+
+#right-column-detail {
+    margin: 20px;
+}
+
+#riggh-column-detail .label {
+    font-size: 11px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#right-column-detail .data {
+    font-size: 11px;
+}
+
+#app-layout #right-column #back-btn {
+    display: none;
+}
