@@ -14,9 +14,9 @@ const dbRef = collection(db, "contacts")
 
 //TODO - Add View
 
-const leftCol = document.getElementById('left-col')
-const backBtn = document.getElementById('back-btn')
-const rightCol =document.getElementById('right-col')
+const leftCol = document.getElementById("left-col")
+const backBtn = document.getElementById("back-btn")
+const rightCol =document.getElementById("right-col")
 
 backBtn.addEventListener('click', (e) => {
     leftCol.style.display = "block"
@@ -56,3 +56,21 @@ const getContacts = async () => {
 }
 
 getContacts()
+
+//SECTION - display contacts as list item
+
+const contactList = document.getElementById("contact-list")
+
+const showContacts = (contact) => {
+    contact.forEach((contact) => {
+        const li = `
+        <li class="contact-list-item" id="${contact.id}">
+        <div class="media">
+        <div class="letter">
+        ${contact.firstname.charAt(0)} ${contact.lastname.charAt(0)}
+        </div>
+        </div>
+        </li>
+        `
+    })
+}
